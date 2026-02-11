@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Sinh Nhật Em 🎂</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Nunito:wght@300;400;600&family=Pacifico&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Background Music -->
+    <audio id="birthday-song" preload="auto">
+        <source src="https://birthday-cake-mu.vercel.app/assets/hbd2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Floating Background Elements -->
+    <div class="floating-container">
+        <div class="floating-item">💖</div>
+        <div class="floating-item">✨</div>
+        <div class="floating-item">🌸</div>
+        <div class="floating-item">🎂</div>
+        <div class="floating-item">🎶</div>
+    </div>
+
+    <!-- 1️⃣ Hero Section -->
+    <section id="hero" class="section hero-section">
+        <div class="content fade-in-up">
+            <h1 class="glow-text">Chúc Mừng Sinh Nhật Em 🎂</h1>
+            <p class="subtitle">Cô gái đặc biệt mà anh may mắn được làm quen giữa hàng triệu người…</p>
+            <div class="scroll-indicator">
+                <span>👇</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2️⃣ Story Section -->
+    <section id="story" class="section story-section">
+        <div class="container">
+            <h2 class="section-title">Câu Chuyện Nhỏ...</h2>
+            <div class="timeline">
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-content">
+                        <h3>Một tin nhắn làm quen...</h3>
+                        <p>Bắt đầu từ một sự tình cờ, anh không nghĩ mình lại có thể nói chuyện hợp với em đến thế.</p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-content">
+                        <h3>Những cuộc trò chuyện mỗi tối...</h3>
+                        <p>Dù chưa gặp mặt, nhưng những dòng tin nhắn mỗi ngày đã trở thành thói quen không thể thiếu
+                            của anh.</p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-content">
+                        <h3>Nụ cười qua màn hình...</h3>
+                        <p>Anh chưa thấy em ngoài đời, nhưng anh cảm nhận được sự ấm áp và chân thành qua từng câu
+                            chuyện em kể.</p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-content">
+                        <h3>Và hôm nay...</h3>
+                        <p>Là ngày đặc biệt nhất của em. Anh muốn gửi đến em những điều tốt đẹp nhất.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3️⃣ Letter Section -->
+    <section id="letter" class="section letter-section">
+        <div class="container">
+            <div class="letter-card scroll-reveal">
+                <div class="letter-content">
+                    <h2 class="handwritten-title">Gửi Em,</h2>
+                    <div id="typing-text" class="typing-area"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4️⃣ Interactive Cake Section -->
+    <section id="cake" class="section cake-section">
+        <div class="container">
+            <h2 class="section-title">Điều Ước Tuổi Mới ✨</h2>
+
+            <div class="cake-container">
+                <div class="cake">
+                    <div class="plate"></div>
+                    <div class="layer layer-bottom"></div>
+                    <div class="layer layer-middle"></div>
+                    <div class="layer layer-top"></div>
+                    <div class="icing"></div>
+                    <div class="drip drip1"></div>
+                    <div class="drip drip2"></div>
+                    <div class="drip drip3"></div>
+
+                    <div class="candle">
+                        <div class="flame" id="flame"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <p id="instruction-text" class="instruction">Hãy nhắm mắt, ước một điều và <strong>thổi vào
+                        micro</strong> để nến tắt nhé! 🎤</p>
+
+                <button id="start-mic-btn" class="btn-primary">Cho phép Micro 🎙️</button>
+                <div id="mic-status" class="hidden">Đang lắng nghe... (Thổi mạnh lên nào!) 🌬️</div>
+
+                <button id="manual-extinguish-btn" class="btn-secondary hidden">Hoặc nhấn vào đây để thổi nến
+                    👆</button>
+            </div>
+
+            <div id="celebration-message" class="celebration-message hidden">
+                <h1 class="glow-text">Chúc Em Tuổi Mới Rực Rỡ Như Chính Nụ Cười Của Em! ✨💖</h1>
+                <button id="play-music-btn" class="btn-primary hidden" style="margin-top: 20px;">🎵 Nhấn để bật nhạc
+                    chúc mừng</button>
+            </div>
+        </div>
+        <canvas id="confetti-canvas"></canvas>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ for You.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
